@@ -1,0 +1,15 @@
+﻿Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+SPDX-License-Identifier: CC-BY-4.0
+
+The material explicitly identified as CC BY 4.0 in this repository is licensed under the Creative Commons Attribution 4.0 International Public License.
+
+Official license deed:
+https://creativecommons.org/licenses/by/4.0/
+
+Official legal code:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+You are free to share and adapt the licensed material for any purpose, provided that you give appropriate credit, provide a link to the license, and indicate if changes were made.
+
+This license applies only to material for which the licensor holds the necessary rights. Third-party material is excluded unless explicitly stated otherwise.

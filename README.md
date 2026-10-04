@@ -122,13 +122,29 @@ Dieses Repository steht in keiner Verbindung zu Roland oder Dope Robot und wird 
 
 ## Lizenz
 
-Für das Repository als Ganzes wurde **bewusst keine pauschale Open-Source-Lizenz vergeben**.
+Für dieses Repository gelten je nach Bestandteil unterschiedliche Lizenzbedingungen.
 
-Der Grund ist, dass neben eigenen Aufbereitungen auch Inhalte, Abbildungen, Zitate und Referenzen aus Drittquellen enthalten sein können, für die unterschiedliche Rechte gelten.
+### Eigene Dokumentation
 
-Das Fehlen einer Lizenz bedeutet insbesondere nicht, dass sämtliche Inhalte frei kopiert, verändert oder weiterverbreitet werden dürfen.
+Sofern nicht anders gekennzeichnet, stehen die von Andy Post für dieses Repository erstellten eigenen Dokumentationen – einschließlich der editierbaren Markdown-Quellen unter `docs/frontpanel-guide/` sowie eigener erläuternder Texte – unter der **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
 
-Für einzelne Bestandteile kann später eine gesonderte Lizenz ausgewiesen werden.
+Diese Inhalte dürfen geteilt, weiterverwendet und bearbeitet werden, auch in eigenen Projekten oder auf eigenen Webseiten, sofern eine angemessene Namensnennung erfolgt, auf die Lizenz verwiesen wird und Änderungen kenntlich gemacht werden.
+
+Weitere Informationen: [`LICENSE.md`](LICENSE.md) und [`LICENSES/CC-BY-4.0.txt`](LICENSES/CC-BY-4.0.txt)
+
+### Eigener Quellcode und Build-Werkzeuge
+
+Eigener Quellcode und eigene Build-Werkzeuge dieses Repositories, insbesondere Skripte unter `tools/`, stehen unter der **MIT License**.
+
+Weitere Informationen: [`LICENSES/MIT.txt`](LICENSES/MIT.txt)
+
+### Ausgenommenes Drittmaterial
+
+Diese Lizenzfreigaben gelten ausschließlich für Inhalte, an denen der Repository-Autor die erforderlichen Rechte besitzt.
+
+Material Dritter – insbesondere Markennamen, Produktnamen, Handbücher, Screenshots, Abbildungen, Zitate, Originaltexte, Software und sonstige Inhalte Dritter – wird durch dieses Repository **nicht neu lizenziert** und unterliegt weiterhin den Rechten und Lizenzbedingungen der jeweiligen Rechteinhaber.
+
+Enthält eine Datei sowohl eigene als auch fremde Inhalte, gilt die jeweilige Lizenzfreigabe nur für die eigenen Bestandteile, an denen die erforderlichen Rechte bestehen.
 
 ## Hinweis
 
@@ -258,13 +274,29 @@ This repository is not affiliated with Roland or Dope Robot and is not officiall
 
 ## License
 
-The repository as a whole has **deliberately not been released under a general open-source license**.
+Different parts of this repository are covered by different license terms.
 
-The reason is that, in addition to original material and preparation, it may contain content, images, quotations, and references from third-party sources that are subject to different rights.
+### Original Documentation
 
-The absence of a license does not mean that all content may be freely copied, modified, or redistributed.
+Unless otherwise noted, original documentation created by Andy Post for this repository — including the editable Markdown sources under `docs/frontpanel-guide/` and original explanatory text — is licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
 
-Individual components may be assigned a separate license at a later date.
+This material may be shared, reused, and adapted, including for your own projects or websites, provided that appropriate credit is given, a reference to the license is included, and changes are indicated.
+
+See [`LICENSE.md`](LICENSE.md) and [`LICENSES/CC-BY-4.0.txt`](LICENSES/CC-BY-4.0.txt) for details.
+
+### Original Source Code and Build Tools
+
+Original source code and build tools authored for this repository, including scripts under `tools/`, are licensed under the **MIT License**.
+
+See [`LICENSES/MIT.txt`](LICENSES/MIT.txt) for details.
+
+### Third-Party Material Excluded
+
+These license grants apply only to material for which the repository author holds the necessary rights.
+
+Third-party trademarks, product names, manuals, screenshots, illustrations, quotations, original text, software, and other third-party material are **not relicensed** by this repository and remain subject to the rights and licenses of their respective owners.
+
+Where a file contains both original and third-party material, the relevant license grant applies only to the original portions for which the necessary rights are held.
 
 ## Disclaimer
 
