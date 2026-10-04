@@ -1,0 +1,11 @@
+# Stable standalone builds on Windows and Unix.
+/TB-3_Interaktiver_Frontpanel_Guide_v1.7_Multilingual.html text eol=lf
+/docs/frontpanel-guide/*.md text eol=lf
+/tools/build_frontpanel_guide.mjs text eol=lf
+/tools/test_frontpanel_guide.mjs text eol=lf
+/tools/test_frontpanel_browser.cjs text eol=lf
+/tools/frontpanel-guide/*.html text eol=lf
+/tools/frontpanel-guide/*.css text eol=lf
+/tools/frontpanel-guide/*.js text eol=lf
+/tools/frontpanel-guide/*.json text eol=lf
+/tools/frontpanel-guide/assets/* binary

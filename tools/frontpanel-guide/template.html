@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{title}}</title>
+<style>
+{{CSS}}</style>
+</head>
+<body>
+<header><div class="header-in"><div><h1>{{title}}</h1><div class="sub">{{sub}}</div></div><div class="lang-switch" id="langSwitch" role="group" aria-label="{{language}}"><button type="button" data-lang="de">DE</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="fr">FR</button></div><div class="search"><input id="search" type="search" placeholder="{{search}}"></div></div></header>
+<div class="layout">
+<aside class="sidebar" id="sidebar"></aside>
+<main class="main">
+<section class="hero"><div class="eyebrow" id="cat"></div><h2 id="title"></h2><div id="summary"></div><div><span class="mode" id="mode"></span><span class="source" id="source"></span></div><div class="quick"><button class="qbtn" onclick="selectOp('copy-pattern')">{{quick.0}}</button><button class="qbtn" onclick="selectOp('save-sound')">{{quick.1}}</button><button class="qbtn" onclick="selectOp('midi-clock')">{{quick.2}}</button><button class="qbtn" onclick="selectOp('factory-reset')">{{quick.3}}</button><button class="qbtn" onclick="selectOp('editor-setup')">{{quick.4}}</button></div></section>
+<div class="grid"><section class="card"><h3 id="stepsHeading">{{stepsHeading}}</h3><div class="legend"><span><span class="kbd">{{legendButton}}</span> = {{legendDescription}}</span><span>{{legendClick}}</span></div><div class="steps" id="steps"></div><div id="notes"></div></section><section class="card visual-card"><h3 id="visualHeading">{{visualHeading}}</h3><div id="visuals"></div></section></div>
+</main></div>
+<div class="footer">{{footer}}</div>
+<script>
+{{DATA}}
+{{LOGIC}}
+</script>
+</body></html>

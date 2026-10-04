@@ -1,0 +1,863 @@
+{
+  "languages": [
+    "de",
+    "en",
+    "fr"
+  ],
+  "categories": [
+    "Patches & Patterns",
+    "TB-3 Editor",
+    "Global Settings",
+    "Navigation",
+    "Other Functions"
+  ],
+  "controls": {
+    "VALUE": {
+      "panel": "front",
+      "targetX": 646.5,
+      "targetY": 174,
+      "markerX": 715,
+      "markerY": 165,
+      "repeatMarkers": [
+        {
+          "markerX": 715,
+          "markerY": 110
+        }
+      ],
+      "label": "VALUE"
+    },
+    "TEMPO": {
+      "panel": "front",
+      "targetX": 522.5,
+      "targetY": 174,
+      "markerX": 715,
+      "markerY": 125,
+      "label": "TEMPO",
+      "routeY": 202
+    },
+    "KEYBOARD": {
+      "panel": "front",
+      "targetX": 255,
+      "targetY": 221,
+      "markerX": 185,
+      "markerY": 150,
+      "label": "KEYBOARD",
+      "routeY": 198
+    },
+    "XY_PLAY": {
+      "panel": "front",
+      "targetX": 297.5,
+      "targetY": 221,
+      "markerX": 185,
+      "markerY": 190,
+      "label": "XY PLAY",
+      "routeY": 198
+    },
+    "ENV_MOD": {
+      "panel": "front",
+      "targetX": 341,
+      "targetY": 221,
+      "markerX": 185,
+      "markerY": 230,
+      "label": "ENV MOD",
+      "routeY": 198
+    },
+    "PTN_SELECT": {
+      "panel": "front",
+      "targetX": 384,
+      "targetY": 221,
+      "markerX": 185,
+      "markerY": 270,
+      "label": "PTN SELECT",
+      "routeY": 198
+    },
+    "SCATTER": {
+      "panel": "front",
+      "targetX": 450,
+      "targetY": 221,
+      "markerX": 715,
+      "markerY": 210,
+      "label": "SCATTER",
+      "routeY": 194
+    },
+    "STEP_REC": {
+      "panel": "front",
+      "targetX": 522.5,
+      "targetY": 221,
+      "markerX": 715,
+      "markerY": 250,
+      "label": "STEP REC",
+      "routeY": 194
+    },
+    "REALTIME_REC": {
+      "panel": "front",
+      "targetX": 584.5,
+      "targetY": 221,
+      "markerX": 715,
+      "markerY": 290,
+      "label": "REALTIME REC",
+      "routeY": 199
+    },
+    "PLAY_STOP": {
+      "panel": "front",
+      "targetX": 646.5,
+      "targetY": 221,
+      "markerX": 715,
+      "markerY": 330,
+      "label": "PLAY/STOP",
+      "routeY": 204
+    },
+    "PAD_CLEAR": {
+      "panel": "front",
+      "targetX": 286,
+      "targetY": 301,
+      "markerX": 185,
+      "markerY": 320,
+      "label": "PAD CLEAR/REST"
+    },
+    "PAD_C": {
+      "panel": "front",
+      "targetX": 324,
+      "targetY": 380,
+      "markerX": 185,
+      "markerY": 370,
+      "label": "PAD C"
+    },
+    "PAD_D": {
+      "panel": "front",
+      "targetX": 360,
+      "targetY": 380,
+      "markerX": 185,
+      "markerY": 420,
+      "label": "PAD D"
+    },
+    "PAD_Z": {
+      "panel": "front",
+      "targetX": 618,
+      "targetY": 301,
+      "markerX": 715,
+      "markerY": 420,
+      "label": "PAD Z / SLIDE-TIE"
+    },
+    "PAD_ANY": {
+      "panel": "front",
+      "targetX": 450,
+      "targetY": 380,
+      "markerX": 715,
+      "markerY": 370,
+      "repeatMarkers": [
+        {
+          "markerX": 715,
+          "markerY": 420
+        }
+      ],
+      "label": "TOUCH PAD"
+    },
+    "OCT_MINUS": {
+      "panel": "front",
+      "targetX": 289,
+      "targetY": 380,
+      "markerX": 185,
+      "markerY": 465,
+      "label": "-OCT"
+    },
+    "OCT_PLUS": {
+      "panel": "front",
+      "targetX": 611,
+      "targetY": 380,
+      "markerX": 715,
+      "markerY": 465,
+      "label": "+OCT"
+    },
+    "POWER": {
+      "panel": "rear",
+      "targetX": 334,
+      "targetY": 291,
+      "markerX": 360,
+      "markerY": 380,
+      "repeatMarkers": [
+        {
+          "markerX": 400,
+          "markerY": 430
+        }
+      ],
+      "label": "POWER"
+    },
+    "USB": {
+      "panel": "rear",
+      "targetX": 282,
+      "targetY": 291,
+      "markerX": 280,
+      "markerY": 380,
+      "repeatMarkers": [
+        {
+          "markerX": 240,
+          "markerY": 430
+        }
+      ],
+      "label": "USB"
+    }
+  },
+  "panelDims": {
+    "front": {
+      "w": 900,
+      "h": 550
+    },
+    "rear": {
+      "w": 900,
+      "h": 550
+    }
+  },
+  "assets": {
+    "front": "assets/front.png",
+    "rear": "assets/rear.png",
+    "p10": "assets/p10.webp",
+    "p13": "assets/p13.webp",
+    "p14": "assets/p14.webp",
+    "p15": "assets/p15.webp",
+    "p16": "assets/p16.webp",
+    "p18": "assets/p18.webp",
+    "p19": "assets/p19.webp",
+    "p20": "assets/p20.webp",
+    "p22": "assets/p22.webp",
+    "p23": "assets/p23.webp",
+    "p24": "assets/p24.webp",
+    "p25": "assets/p25.webp",
+    "p26": "assets/p26.webp",
+    "p27": "assets/p27.webp",
+    "p28": "assets/p28.webp",
+    "p29": "assets/p29.webp",
+    "p30": "assets/p30.webp",
+    "p31": "assets/p31.webp",
+    "p32": "assets/p32.webp",
+    "p33": "assets/p33.webp",
+    "p34": "assets/p34.webp"
+  },
+  "hardwareHighlights": [
+    "PTN SELECT",
+    "PLAY/STOP",
+    "REALTIME REC",
+    "STEP REC",
+    "ENV MOD",
+    "KEYBOARD",
+    "SCATTER",
+    "TEMPO",
+    "VALUE",
+    "POWER",
+    "USB",
+    "PAD CLEAR"
+  ],
+  "quick": [
+    "copy-pattern",
+    "save-sound",
+    "midi-clock",
+    "factory-reset",
+    "editor-setup"
+  ],
+  "operations": [
+    {
+      "id": "save-sound",
+      "cat": "Patches & Patterns",
+      "source": "Save Sound Patch",
+      "controls": [
+        "ENV_MOD",
+        "VALUE",
+        "PLAY_STOP"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "link-sound",
+      "cat": "Patches & Patterns",
+      "source": "Link Sound to Pattern",
+      "controls": [
+        "PAD_ANY",
+        "ENV_MOD",
+        "VALUE",
+        "PLAY_STOP"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "pattern-lock",
+      "cat": "Patches & Patterns",
+      "source": "Pattern Lock",
+      "controls": [
+        "PTN_SELECT",
+        "VALUE"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "pattern-steps",
+      "cat": "Patches & Patterns",
+      "source": "Set Pattern Steps",
+      "controls": [
+        "STEP_REC",
+        "VALUE"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "copy-pattern",
+      "cat": "Patches & Patterns",
+      "source": "Copy Pattern",
+      "controls": [
+        "PAD_ANY",
+        "PTN_SELECT",
+        "PAD_ANY",
+        "VALUE",
+        "PLAY_STOP"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "delete-pattern",
+      "cat": "Patches & Patterns",
+      "source": "Delete Pattern",
+      "controls": [
+        "PAD_ANY",
+        "PTN_SELECT",
+        "PAD_CLEAR",
+        "PLAY_STOP"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "random-notes",
+      "cat": "Patches & Patterns",
+      "source": "Randomize Notes",
+      "controls": [
+        "PTN_SELECT",
+        "SCATTER"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "random-extras",
+      "cat": "Patches & Patterns",
+      "source": "Randomize Accents, Glides, & Octaves",
+      "controls": [
+        "KEYBOARD",
+        "SCATTER"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "transpose",
+      "cat": "Patches & Patterns",
+      "source": "Transpose a Pattern",
+      "controls": [
+        "KEYBOARD",
+        "PAD_ANY"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "pitch-shift",
+      "cat": "Patches & Patterns",
+      "source": "Change Pattern Pitch",
+      "controls": [
+        "KEYBOARD",
+        "VALUE"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "swing",
+      "cat": "Patches & Patterns",
+      "source": "Set Swing Amount",
+      "controls": [
+        "TEMPO",
+        "VALUE"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "triplet",
+      "cat": "Patches & Patterns",
+      "source": "Change to Triplet Timing",
+      "controls": [
+        "STEP_REC",
+        "TEMPO"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "tap-tempo",
+      "cat": "Patches & Patterns",
+      "source": "Tap Tempo",
+      "controls": [
+        "TEMPO",
+        "SCATTER"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "backup",
+      "cat": "Patches & Patterns",
+      "source": "Backup Patterns",
+      "controls": [
+        "PLAY_STOP",
+        "POWER",
+        "USB",
+        "USB",
+        "POWER"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "restore",
+      "cat": "Patches & Patterns",
+      "source": "Restore Patterns",
+      "controls": [
+        "PLAY_STOP",
+        "POWER",
+        "USB",
+        "USB",
+        "POWER"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "editor-why",
+      "cat": "TB-3 Editor",
+      "source": "TB-3 Editor Video 00:01–00:49",
+      "controls": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "visuals": [
+        "p10"
+      ],
+      "headings": [
+        "stepHeading",
+        "visualHeading"
+      ]
+    },
+    {
+      "id": "editor-setup",
+      "cat": "TB-3 Editor",
+      "source": "TB-3 Editor Video 00:52–01:30 · praktisch verifizierte Einrichtung",
+      "controls": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "visuals": [
+        "p13",
+        "p18",
+        "p19",
+        "p20"
+      ],
+      "headings": [
+        "stepHeading",
+        "visualHeading"
+      ]
+    },
+    {
+      "id": "editor-firmware-check",
+      "cat": "TB-3 Editor",
+      "source": "TB-3 Editor Video 01:01–01:07",
+      "controls": [
+        "TEMPO",
+        "POWER",
+        null,
+        "PLAY_STOP"
+      ],
+      "visuals": [
+        "p14",
+        "p15",
+        "p16"
+      ],
+      "headings": []
+    },
+    {
+      "id": "editor-sound-sources",
+      "cat": "TB-3 Editor",
+      "source": "TB-3 Editor Video 01:37–01:42",
+      "controls": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "visuals": [
+        "p22",
+        "p23"
+      ],
+      "headings": [
+        "stepHeading",
+        "visualHeading"
+      ]
+    },
+    {
+      "id": "editor-vcf",
+      "cat": "TB-3 Editor",
+      "source": "TB-3 Editor Video 01:47",
+      "controls": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "visuals": [
+        "p24"
+      ],
+      "headings": [
+        "stepHeading",
+        "visualHeading"
+      ]
+    },
+    {
+      "id": "editor-lfo",
+      "cat": "TB-3 Editor",
+      "source": "TB-3 Editor Video 01:52",
+      "controls": [
+        null,
+        null,
+        null
+      ],
+      "visuals": [
+        "p25"
+      ],
+      "headings": [
+        "stepHeading",
+        "visualHeading"
+      ]
+    },
+    {
+      "id": "editor-crossmod",
+      "cat": "TB-3 Editor",
+      "source": "TB-3 Editor Video 01:57",
+      "controls": [
+        null
+      ],
+      "visuals": [
+        "p26"
+      ],
+      "headings": [
+        "stepHeading",
+        "visualHeading"
+      ]
+    },
+    {
+      "id": "editor-vca",
+      "cat": "TB-3 Editor",
+      "source": "TB-3 Editor Video 02:01",
+      "controls": [
+        null,
+        null
+      ],
+      "visuals": [
+        "p27"
+      ],
+      "headings": [
+        "stepHeading",
+        "visualHeading"
+      ]
+    },
+    {
+      "id": "editor-distortion",
+      "cat": "TB-3 Editor",
+      "source": "TB-3 Editor Video 02:06",
+      "controls": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "visuals": [
+        "p28"
+      ],
+      "headings": [
+        "stepHeading",
+        "visualHeading"
+      ]
+    },
+    {
+      "id": "editor-efx1",
+      "cat": "TB-3 Editor",
+      "source": "TB-3 Editor Video 02:15",
+      "controls": [
+        null,
+        null,
+        null
+      ],
+      "visuals": [
+        "p29"
+      ],
+      "headings": [
+        "stepHeading",
+        "visualHeading"
+      ]
+    },
+    {
+      "id": "editor-efx2",
+      "cat": "TB-3 Editor",
+      "source": "TB-3 Editor Video 02:20",
+      "controls": [
+        null,
+        null
+      ],
+      "visuals": [
+        "p30"
+      ],
+      "headings": [
+        "stepHeading",
+        "visualHeading"
+      ]
+    },
+    {
+      "id": "editor-controller-assign",
+      "cat": "TB-3 Editor",
+      "source": "TB-3 Editor Video 02:26",
+      "controls": [
+        null,
+        null,
+        null
+      ],
+      "visuals": [
+        "p31"
+      ],
+      "headings": [
+        "stepHeading",
+        "visualHeading"
+      ]
+    },
+    {
+      "id": "editor-pattern",
+      "cat": "TB-3 Editor",
+      "source": "TB-3 Editor Video 02:32",
+      "controls": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "visuals": [
+        "p32"
+      ],
+      "headings": [
+        "stepHeading",
+        "visualHeading"
+      ]
+    },
+    {
+      "id": "editor-misc",
+      "cat": "TB-3 Editor",
+      "source": "TB-3 Editor Video 02:38",
+      "controls": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "visuals": [
+        "p33"
+      ],
+      "headings": [
+        "stepHeading",
+        "visualHeading"
+      ]
+    },
+    {
+      "id": "editor-save-load",
+      "cat": "TB-3 Editor",
+      "source": "TB-3 Editor Video 02:45",
+      "controls": [
+        null,
+        null,
+        null
+      ],
+      "visuals": [
+        "p34"
+      ],
+      "headings": [
+        "stepHeading",
+        "visualHeading"
+      ]
+    },
+    {
+      "id": "keyboard-mode",
+      "cat": "Global Settings",
+      "source": "Set Keyboard Mode",
+      "controls": [
+        "SCATTER",
+        "VALUE"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "midi-channel",
+      "cat": "Global Settings",
+      "source": "Set MIDI Channel",
+      "controls": [
+        "SCATTER",
+        "POWER",
+        "VALUE"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "midi-clock",
+      "cat": "Global Settings",
+      "source": "Set MIDI Clock Source",
+      "controls": [
+        "SCATTER",
+        "POWER",
+        "PAD_C"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "midi-thru",
+      "cat": "Global Settings",
+      "source": "Set MIDI THRU",
+      "controls": [
+        "SCATTER",
+        "POWER",
+        "PAD_D"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "pad-sens",
+      "cat": "Global Settings",
+      "source": "Set Keypad Sensitivity",
+      "controls": [
+        "SCATTER",
+        "POWER",
+        "KEYBOARD",
+        "VALUE"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "master-tune",
+      "cat": "Global Settings",
+      "source": "Master Tune",
+      "controls": [
+        "SCATTER",
+        "POWER",
+        "ENV_MOD",
+        "VALUE"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "realtime-tune",
+      "cat": "Global Settings",
+      "source": "Realtime Tuning",
+      "controls": [
+        "ENV_MOD",
+        "PAD_ANY"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "led-demo",
+      "cat": "Global Settings",
+      "source": "LED Demo Mode",
+      "controls": [
+        "SCATTER",
+        "POWER",
+        "TEMPO",
+        "VALUE"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "select-sound",
+      "cat": "Navigation",
+      "source": "Select a Sound",
+      "controls": [
+        "VALUE",
+        "KEYBOARD",
+        "VALUE"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "select-pattern",
+      "cat": "Navigation",
+      "source": "Select a Pattern",
+      "controls": [
+        "VALUE",
+        "PAD_ANY"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "firmware",
+      "cat": "Other Functions",
+      "source": "Firmware Version",
+      "controls": [
+        "STEP_REC",
+        "REALTIME_REC",
+        "POWER",
+        "PLAY_STOP"
+      ],
+      "visuals": [],
+      "headings": []
+    },
+    {
+      "id": "factory-reset",
+      "cat": "Other Functions",
+      "source": "Factory Reset",
+      "controls": [
+        "REALTIME_REC",
+        "POWER",
+        "PLAY_STOP",
+        "POWER"
+      ],
+      "visuals": [],
+      "headings": []
+    }
+  ]
+}

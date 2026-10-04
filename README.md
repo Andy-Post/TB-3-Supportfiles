@@ -10,16 +10,68 @@ Sammlung von Dokumentationen, Hilfsdateien und aufbereiteten Anleitungen rund um
 
 Der Schwerpunkt liegt darauf, Informationen aus verschiedenen Quellen so zusammenzuführen, dass sie im praktischen Einsatz leichter auffindbar und verständlicher sind – insbesondere für Bedienung, versteckte Funktionen, Pattern-/Sound-Verwaltung sowie die Nutzung des TB-3 Editors am Rechner.
 
-## Inhalt
+## Interaktiver Frontpanel- & Editor-Guide
 
-Zum Repository gehören unter anderem:
+Die zentrale nutzbare Dokumentation dieses Repositories ist:
 
-- **Interaktiver Frontpanel-Guide (DE / EN / FR)**  
-  Eine durchsuchbare HTML-Anleitung mit visualisierten Bedienfolgen direkt am TB-3-Frontpanel.  
-  Ab Version **v1.7 Multilingual** kann der Guide direkt zwischen **Deutsch, Englisch und Französisch** umgeschaltet werden. Die Anleitungen, Hinweise, Suchtexte und UI-Texte werden dabei sprachabhängig dargestellt; die originalen Hardware-Beschriftungen der TB-3 bleiben unverändert.
+```text
+TB-3_Interaktiver_Frontpanel_Guide_v1.7_Multilingual.html
+```
+
+Der Guide ist eine **standalone HTML-Datei** und kann direkt im Browser geöffnet werden. Er enthält unter anderem:
+
+- Deutsch (`DE`), Englisch (`EN`) und Französisch (`FR`)
+- eine integrierte Suche
+- dokumentierte Frontpanel-Funktionen
+- dokumentierte Editor-Funktionen
+- Hinweise zu bekannten Abweichungen zwischen den verwendeten Quellen
+
+Die originalen Hardware-Beschriftungen der TB-3 bleiben dabei unverändert.
+
+### Redaktionelle Quellen und generierte HTML-Datei
+
+Die HTML-Datei ist die **fertige nutzbare Guide-Version** und wird **nicht direkt redaktionell bearbeitet**.
+
+Die editierbaren redaktionellen Quellen befinden sich unter:
+
+```text
+docs/frontpanel-guide/
+    de.md
+    en.md
+    fr.md
+    README.md
+```
+
+Dabei gilt eindeutig:
+
+- `de.md`, `en.md` und `fr.md` sind die **redaktionellen Arbeitsquellen**.
+- `TB-3_Interaktiver_Frontpanel_Guide_v1.7_Multilingual.html` ist die daraus **generierte fertige standalone Version** für die Nutzung im Browser.
+- Änderungen am Guide werden deshalb in den Markdown-Dateien vorgenommen und anschließend in die HTML-Datei gebaut.
+
+### Build und Prüfung
+
+Guide neu erzeugen:
+
+```bash
+node tools/build_frontpanel_guide.mjs
+```
+
+Prüfen, ob die Markdown-Quellen gültig sind und die generierte HTML-Datei dem aktuellen Stand entspricht:
+
+```bash
+node tools/build_frontpanel_guide.mjs --check
+```
+
+Die ausführliche Pflege- und Build-Anleitung befindet sich hier:
+
+[docs/frontpanel-guide/README.md](docs/frontpanel-guide/README.md)
+
+## Weitere Inhalte des Repositories
+
+Zum Repository gehören unter anderem außerdem:
 
 - **TB-3 Editor – Einrichtung und Nutzung**  
-  Hinweise zur Verbindung der TB-3 mit dem Rechner, zur Einrichtung von Ctrlr und zur Nutzung des Dope-Robot-TB-3-Editors.
+  Informationen zur Verbindung der TB-3 mit dem Rechner, zu Ctrlr und zur Nutzung des Dope-Robot-TB-3-Editors sind im interaktiven Frontpanel- & Editor-Guide zusammengeführt.
 
 - **Video-Transkription**  
   Chronologisch aufbereitete Texte aus dem Video  
@@ -34,47 +86,12 @@ Zum Repository gehören unter anderem:
 TB-3_Interaktiver_Frontpanel_Guide_v1.7_Multilingual.html
 TB-3_Editor_Video_Textchronologie.md
 TB-3_Editor_Video_Bild_und_Text.pdf
+tools/build_frontpanel_guide.mjs
+docs/frontpanel-guide/de.md
+docs/frontpanel-guide/en.md
+docs/frontpanel-guide/fr.md
+docs/frontpanel-guide/README.md
 ```
-
-Die HTML-Datei ist als zentrale Arbeits- und Nachschlageversion gedacht.
-
-### Sprachauswahl im Frontpanel-Guide
-
-Der interaktive Frontpanel-Guide unterstützt ab **v1.7**:
-
-- Deutsch (`DE`)
-- Englisch (`EN`)
-- Französisch (`FR`)
-
-Die Sprache kann direkt im Guide umgeschaltet werden. Zusätzlich kann sie über einen URL-Parameter vorgegeben werden:
-
-```text
-?lang=de
-?lang=en
-?lang=fr
-```
-
-## TB-3 Editor am Rechner
-
-Für die aktuell getestete Standalone-Nutzung funktioniert folgende Grundkonfiguration:
-
-1. Roland TB-3 per USB direkt mit dem Rechner verbinden.
-2. Aktuellen Roland-Treiber installieren.
-3. TB-3 einschalten.
-4. Ctrlr Standalone starten.
-5. Das TB-3-Editor-Panel laden.
-6. In Ctrlr konfigurieren:
-   - `MIDI -> Input -> Device -> TB-3`
-   - `MIDI -> Input -> Channel -> 2`
-   - `MIDI -> Output -> Device -> TB-3`
-   - `MIDI -> Output -> Channel -> 2`
-7. MIDI-Geräte in Ctrlr aktualisieren oder Ctrlr neu starten.
-8. Auf der TB-3 einen Sound auswählen.
-9. Im Editor `RECEIVE` drücken.
-
-Wenn die Verbindung funktioniert, übernimmt das Panel die aktuellen Patch-Werte der TB-3.
-
-Hinweis: Die Felder `MIDI IN CH` und `MIDI OUT CH` im **MISC**-Bereich des TB-3-Editor-Panels sind nicht mit der grundlegenden MIDI-Port-Auswahl von Ctrlr zu verwechseln.
 
 ## Ziel des Projekts
 
@@ -129,16 +146,68 @@ A collection of documentation, support files, and prepared guides for the **Rola
 
 The main goal is to bring information from different sources together in a form that is easier to find and understand in practical use — especially for operation, hidden functions, pattern and sound management, and using the TB-3 editor on a computer.
 
-## Contents
+## Interactive Front Panel & Editor Guide
 
-The repository includes, among other things:
+The central user-facing documentation in this repository is:
 
-- **Interactive Front Panel Guide (DE / EN / FR)**  
-  A searchable HTML guide with visualized operating sequences directly on the TB-3 front panel.  
-  Starting with **v1.7 Multilingual**, the guide can be switched directly between **German, English, and French**. Instructions, notes, search text, and UI text are displayed in the selected language, while the original hardware labels of the TB-3 remain unchanged.
+```text
+TB-3_Interaktiver_Frontpanel_Guide_v1.7_Multilingual.html
+```
+
+The guide is a **standalone HTML file** that can be opened directly in a browser. It includes, among other things:
+
+- German (`DE`), English (`EN`), and French (`FR`)
+- integrated search
+- documented front panel functions
+- documented editor functions
+- notes on known differences between the sources used
+
+The original hardware labels of the TB-3 remain unchanged.
+
+### Editorial Sources and Generated HTML
+
+The HTML file is the **finished user-facing guide** and is **not edited directly as the editorial source**.
+
+The editable editorial sources are located under:
+
+```text
+docs/frontpanel-guide/
+    de.md
+    en.md
+    fr.md
+    README.md
+```
+
+The distinction is:
+
+- `de.md`, `en.md`, and `fr.md` are the **editorial working sources**.
+- `TB-3_Interaktiver_Frontpanel_Guide_v1.7_Multilingual.html` is the **generated finished standalone version** for use in a browser.
+- Changes to the guide are therefore made in the Markdown files and then built into the HTML file.
+
+### Build and Check
+
+Generate the guide:
+
+```bash
+node tools/build_frontpanel_guide.mjs
+```
+
+Check whether the Markdown sources are valid and whether the generated HTML file is up to date:
+
+```bash
+node tools/build_frontpanel_guide.mjs --check
+```
+
+The detailed maintenance and build instructions are located here:
+
+[docs/frontpanel-guide/README.md](docs/frontpanel-guide/README.md)
+
+## Other Repository Contents
+
+The repository also includes, among other things:
 
 - **TB-3 Editor – Setup and Usage**  
-  Notes on connecting the TB-3 to a computer, setting up Ctrlr, and using the Dope Robot TB-3 editor.
+  Information on connecting the TB-3 to a computer, using Ctrlr, and working with the Dope Robot TB-3 editor is consolidated in the interactive Front Panel & Editor Guide.
 
 - **Video Transcription**  
   Chronologically prepared text from the video  
@@ -153,47 +222,12 @@ The repository includes, among other things:
 TB-3_Interaktiver_Frontpanel_Guide_v1.7_Multilingual.html
 TB-3_Editor_Video_Textchronologie.md
 TB-3_Editor_Video_Bild_und_Text.pdf
+tools/build_frontpanel_guide.mjs
+docs/frontpanel-guide/de.md
+docs/frontpanel-guide/en.md
+docs/frontpanel-guide/fr.md
+docs/frontpanel-guide/README.md
 ```
-
-The HTML file is intended to be the central working and reference version.
-
-### Language Selection in the Front Panel Guide
-
-Starting with **v1.7**, the interactive front panel guide supports:
-
-- German (`DE`)
-- English (`EN`)
-- French (`FR`)
-
-The language can be changed directly in the guide. It can also be selected using a URL parameter:
-
-```text
-?lang=de
-?lang=en
-?lang=fr
-```
-
-## Using the TB-3 Editor on a Computer
-
-For the currently tested standalone setup, the following basic configuration works:
-
-1. Connect the Roland TB-3 directly to the computer via USB.
-2. Install the current Roland driver.
-3. Switch on the TB-3.
-4. Start Ctrlr Standalone.
-5. Load the TB-3 editor panel.
-6. Configure the following in Ctrlr:
-   - `MIDI -> Input -> Device -> TB-3`
-   - `MIDI -> Input -> Channel -> 2`
-   - `MIDI -> Output -> Device -> TB-3`
-   - `MIDI -> Output -> Channel -> 2`
-7. Refresh the MIDI devices in Ctrlr or restart Ctrlr.
-8. Select a sound on the TB-3.
-9. Press `RECEIVE` in the editor.
-
-If the connection is working, the panel will load the TB-3's current patch values.
-
-Note: The `MIDI IN CH` and `MIDI OUT CH` fields in the **MISC** section of the TB-3 editor panel should not be confused with Ctrlr's basic MIDI port selection.
 
 ## Project Goal
 
